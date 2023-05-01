@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GetWork</string>
+    <string name="signIn">Sign In</string>
+    <string name="register">Register</string>
+    <string name="dontHaveAnAccountRegisterNow">Don\'t have an account? Register now</string>
+    <string name="AlreadyHaveAnAccountLogin">Already have an account? Login in</string>
+    <string name="proceed_to_pay">Proceed to pay</string>
+    <string name="subtotal">Subtotal</string>
+</resources>

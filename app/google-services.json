@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "937020897833",
+    "project_id": "getworkdb",
+    "storage_bucket": "getworkdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937020897833:android:470cfe4f1b540d805a3a38",
+        "android_client_info": {
+          "package_name": "com.example.getwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937020897833-n6a83ggirmfq3h6hmqledo8rnusk1t30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1dfcyE07PQILTVpGImpSqybTBwYKvFO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937020897833-n6a83ggirmfq3h6hmqledo8rnusk1t30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
