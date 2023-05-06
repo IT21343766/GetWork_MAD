@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.Observable
+import com.example.getwork.R
 
 @SuppressLint("CheckResult")
 class LoginActivity : AppCompatActivity() {

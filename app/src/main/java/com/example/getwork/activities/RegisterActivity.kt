@@ -14,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.jakewharton.rxbinding2.widget.RxTextView
 import io.reactivex.Observable
 import java.util.regex.Pattern
+import com.example.getwork.R
 
 @SuppressLint("CheckResult")
 class RegisterActivity : AppCompatActivity() {

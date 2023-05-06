@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.getwork.models.EmployeeModel
+import com.example.getwork.R
 
 
 class EmpAdapter(private val empList: ArrayList<EmployeeModel>) :

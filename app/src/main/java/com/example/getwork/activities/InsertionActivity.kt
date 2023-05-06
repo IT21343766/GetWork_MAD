@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.example.getwork.R
+import com.example.getwork.models.EmployeeModel
 
 class InsertionActivity :AppCompatActivity(){
 
@@ -56,7 +58,7 @@ class InsertionActivity :AppCompatActivity(){
 
         val empId=dbRef.push().key!!
 
-        val employee=EmployeeModel (empId,empName,empAge,empSalary)
+        val employee= EmployeeModel (empId,empName,empAge,empSalary)
 
 
         dbRef.child(empId).setValue(employee)

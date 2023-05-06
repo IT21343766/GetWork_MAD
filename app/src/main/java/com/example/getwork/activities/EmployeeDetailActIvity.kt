@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
+import com.example.getwork.R
+import com.example.getwork.models.EmployeeModel
 
 class EmployeeDetailsActivity : AppCompatActivity() {
 
