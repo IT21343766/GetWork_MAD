@@ -59,6 +59,9 @@ dependencies {
 
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.2.0'
 
-     implementation "io.reactivex.rxjava2.rxjava:2.2.19"
+     //implementation 'io.reactivex.rxjava2.rxjava:2.2.19'
 
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+
+    implementation 'com.google.firebase:firebase-database-ktx:20.0.4'
 }

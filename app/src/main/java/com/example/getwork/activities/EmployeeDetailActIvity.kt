@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.example.getwork.activities
 
 import android.content.Intent
 import android.os.Bundle

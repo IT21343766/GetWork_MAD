@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.example.getwork.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.getwork.adapters.EmpAdapter
+import com.example.getwork.models.EmployeeModel
 import com.google.firebase.database.*
+import com.example.getwork.R
 
 //import com.google.firebase.database.R
 
