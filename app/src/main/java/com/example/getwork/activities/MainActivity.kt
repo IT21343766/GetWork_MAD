@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.getwork.databinding.ActivityMainBinding
+import com.example.loginpage.LoginActivity
+import com.example.loginpage.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -20,10 +22,10 @@ class MainActivity : AppCompatActivity() {
         auth= FirebaseAuth.getInstance()
 
         binding.btnLogin.setOnClickListener{
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
         binding.btnRegister.setOnClickListener{
-            startActivity(Intent(this,RegisterActivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
     override fun onStart(){
