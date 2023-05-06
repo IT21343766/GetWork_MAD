@@ -50,7 +50,7 @@ class LoginActivity: AppCompatActivity() {
                                 binding.btnLogin.isEnabled = true
                                 binding.btnLogin.text = "Sign in"
 
-                                val intent = Intent(this, MainActivity::class.java)
+                                val intent = Intent(this, PaymentsDashboard::class.java)
                                 startActivity(intent)
                             }
                         } else {

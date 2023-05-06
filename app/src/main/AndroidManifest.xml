@@ -19,7 +19,7 @@
             android:value="true" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.PaymentsDashboard"
             android:theme="@style/Theme.GetWork"
             android:exported="true">
         </activity>
