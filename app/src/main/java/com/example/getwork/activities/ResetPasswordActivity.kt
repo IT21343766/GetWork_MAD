@@ -8,7 +8,7 @@ import android.provider.ContactsContract
 import android.util.Patterns
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.example.loginpage.databinding.ActivityResetPasswordBinding
+import com.example.getwork.databinding.ActivityResetPasswordBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.jakewharton.rxbinding2.widget.RxTextView
 @SuppressLint("CheckResult")

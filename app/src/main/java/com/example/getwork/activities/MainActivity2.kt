@@ -6,7 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.loginpage.FetchingActivity
 import com.example.loginpage.InsertionActivity
-import com.example.loginpage.R
+import com.example.getwork.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 

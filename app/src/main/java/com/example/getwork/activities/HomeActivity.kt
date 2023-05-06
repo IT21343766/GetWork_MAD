@@ -3,7 +3,7 @@ package com.example.loginpage
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.loginpage.databinding.ActivityHomeBinding
+import com.example.getwork.databinding.ActivityHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
