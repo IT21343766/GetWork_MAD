@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import com.example.getwork.databinding.ActivityResetPasswordBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.jakewharton.rxbinding2.widget.RxTextView
+import com.example.getwork.R
 @SuppressLint("CheckResult")
 class ResetPasswordActivity : AppCompatActivity() {
 
