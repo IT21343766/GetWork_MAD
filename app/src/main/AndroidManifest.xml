@@ -19,7 +19,7 @@
             android:value="true" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.MainActivity_old"
             android:theme="@style/Theme.GetWork"
             android:exported="true">
         </activity>

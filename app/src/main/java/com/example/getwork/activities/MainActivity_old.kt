@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.getwork.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity_old : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
 
