@@ -6,4 +6,8 @@
     <string name="AlreadyHaveAnAccountLogin">Already have an account? Login in</string>
     <string name="proceed_to_pay">Proceed to pay</string>
     <string name="subtotal">Subtotal</string>
+    <string name="my_payment_history">My Payment history</string>
+    <string name="your_payment_information">Your Payment Information</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="without_the_payment_information_getwork_cannot_pay_you_for_your_work_and_all_the_payments_will_be_held_until_payment_information_is_uploaded_and_approved">Without the payment information, GetWork cannot pay you for your work, and all the payments will be held until payment information is uploaded and approved</string>
 </resources>

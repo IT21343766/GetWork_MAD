@@ -1,4 +1,4 @@
-package com.example.getwork
+package com.example.getwork.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -16,6 +16,7 @@ class RegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         binding.redirToLogin.setOnClickListener(){
             var intent = Intent(this, LoginActivity::class.java)

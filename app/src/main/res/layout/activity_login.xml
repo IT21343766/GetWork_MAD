@@ -8,7 +8,7 @@
     android:padding="20dp"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".LoginActivity"
+    tools:context=".activities.LoginActivity"
     >
     <TextView
         android:id="@+id/textViewSignInBanner"
