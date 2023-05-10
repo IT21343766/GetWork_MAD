@@ -3,30 +3,38 @@ package com.example.getwork.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.getwork.databinding.ActivityPaymentDashboardBinding
+import android.widget.Toast
+import com.example.getwork.databinding.ActivityMainBinding
+import com.example.getwork.activities.LoginActivity
+import com.example.getwork.activities.RegisterActivity
+import com.google.firebase.auth.FirebaseAuth
 
-class PaymentsDashboard : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding:ActivityPaymentDashboardBinding
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPaymentDashboardBinding.inflate(layoutInflater)
+        binding =ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonProceedToPay.setOnClickListener{
-            var intent = Intent(this, PaymentConfirmActivity::class.java)
-            startActivity(intent)
-        }
+        auth= FirebaseAuth.getInstance()
 
-        binding.buttonPaymentHistory.setOnClickListener{
-            var intent = Intent(this, PaymentHistoryActivity::class.java)
-            startActivity(intent)
+        binding.btnLogin.setOnClickListener{
+            startActivity(Intent(this, LoginActivity::class.java))
         }
-
-        binding.buttonEnterPaymentInformation.setOnClickListener{
-            var intent = Intent(this, ReadPaymentInformationActivity::class.java)
-            startActivity(intent)
+        binding.btnRegister.setOnClickListener{
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
+    }
+    override fun onStart(){
+        super.onStart()
+        if(auth.currentUser == null){
+            Intent(this,LoginActivity::class.java).also {
+                it.flags=Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(it)
+            }
         }
     }
 }

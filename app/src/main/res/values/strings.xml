@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GetWork</string>
     <string name="signIn">Sign In</string>
-    <string name="register">Register</string>
+
     <string name="dontHaveAnAccountRegisterNow">Don\'t have an account? Register now</string>
     <string name="AlreadyHaveAnAccountLogin">Already have an account? Login in</string>
     <string name="proceed_to_pay">Proceed to pay</string>
@@ -10,47 +10,55 @@
     <string name="your_payment_information">Your Payment Information</string>
     <string name="submit_details">Submit Details</string>
     <string name="without_the_payment_information_getwork_cannot_pay_you_for_your_work_and_all_the_payments_will_be_held_until_payment_information_is_uploaded_and_approved">Without the payment information, GetWork cannot pay you for your work, and all the payments will be held until payment information is uploaded and approved</string>
-    <string name="adminLogin_loginBtn">Log in</string>
-    <string name="adminLogin_title">Administrator Login</string>
-    <string name="mainTitleSize">24dp</string>
-    <string name="adminLogin_passw_helper">Password</string>
-    <string name="adminLogin_uname_helper">Username</string>
-    <string name="payment_mgt_title">Dashboard</string>
-    <string name="adminDash_allPayments">All Payments</string>
-    <string name="adminDash_revenue">revenue</string>
-    <string name="adminDash_reviewsAndRatings">Reviews and Ratings</string>
-    <string name="adminDash_paymentReports">Analytics and Reports</string>
-    <string name="adminDash_lastMonth">Last Month Report</string>
-    <string name="adminDash_thisMonthReport">This Month Report</string>
-    <string name="adminDash_lifetimeRevenue">Lifetime Revenue</string>
-    <string name="adminAllPayments_filterBtn">Filter results</string>
-    <string name="adminAllPayments_sortBtn">Sort</string>
-    <string name="adminDash_allPayments_paymentAmount">500$</string>
-    <string name="adminDash_allPayments_paymentCardTitle">Payment at 14:33 on 13/01/2022</string>
-    <string name="adminDash_allPayments_paymentBy">From User : #69r7b23yr23648</string>
-    <string name="payment_info_title">Your Payment Information</string>
-    <string name="textView_cardNum">Card number</string>
-    <string name="adminLogin_getAccNotice">Contact administrators for an account</string>
-    <string name="userPayInfo_cardNamePlaceholder">Name as it appears on your card</string>
-    <string name="userPayInfo_cardNameTitle">Card Holder Name</string>
-    <string name="userPayInfo_cardNickNamePlaceholder">(Optional)</string>
-    <string name="userPayInfo_cardNickNameTitle">Card nickname</string>
-    <string name="userPayInfo_cardNumTitle">Card Number</string>
-    <string name="userPayInfo_cardNumPlaceholder">16 – 20 digit number..</string>
-    <string name="userPayInfo_cardYearTitle">Year</string>
-    <string name="userPayInfo_cardMonthTitle">Month</string>
-    <string name="userPayInfo_cardCodeTitle">CCV/CVC code</string>
-    <string name="userPayInfo_cardYearPlaceholder">YY</string>
-    <string name="userPayInfo_cardMonthPlaceholder">MM</string>
-    <string name="userPayInfo_cardCodePlaceholder">CCV/CVC</string>
-    <string name="userPayInfo_saveInfoText">These details will not be stored in out systems.
-        Instead this will be safely stored in your phone.</string>
-    <string name="userPayInfo_submitBtn">Save Info</string>
-    <string name="userPayInfo_cancelBtn">Clear info</string>
-    <string name="paymentConfirmTitle">Payment Confirmation</string>
-    <string name="userPayConf_amount">Rs. 2300.00</string>
-    <string name="paymentConfirmText">Proceed to pay the above amount with your card ending with</string>
-    <string name="userPayConf_cardNumSafe">**** 1234</string>
-    <string name="userPayConf_cancelBtn">Cancel</string>
-    <string name="userPayConf_pay">Pay</string>
+
+
+        <string name="started_title">Hello You</string>
+        <string name="started_sub_title">
+        Nice to meet you ,come join our community!
+        <br><b>Login</b>if you already have an account.</br>
+        <br><b>Register</b> to get started with the app</br>
+    </string>
+        <string name="illustrion_img">Illustrion Image</string>
+        <string name="register">Register</string>
+        <string name="btn_login">LOGIN</string>
+        <string name="login_title">Login to app</string>
+        <string name="Login_sub_title">
+        <font color="#00C9B8"><b>Login</b></font>
+        if you already have an account.
+    </string>
+        <string name="login_email">Your email or username</string>
+        <string name="login_password">your password</string>
+        <string name="login_forgot_pw">Forget password?</string>
+        <string name="login_havent_account">
+        I don\'t have an account
+        <font color="#00c988"><b>Register</b></font>
+    </string>
+        <string name="register_title">Create an account</string>
+        <string name="register_sub_title">
+        <font color="#00C9B8"><b>Register</b></font>
+        to get started with the app.
+    </string>
+        <string name="register_fullname">your full name</string>
+        <string name="register_email">Your email</string>
+        <string name="register_username">Your username</string>
+        <string name="register_confirm_password">Confirm Password</string>
+        <string name="register_have_account">
+        I already have an  account
+        <font color="#00C98B"><b>Login</b></font>
+    </string>
+        <string name="btn_register">REGISTER</string>
+        <string name="home_title">Wellcome Home page</string>
+        <string name="home_sub_title">Necessary services at the same place</string>
+        <string name="btn_logout">LOGOUT</string>
+        <string name="reset_pw_title">Reset your password</string>
+        <string name="reset_pw_sub_title">
+        <font color="#00C9B8">Reset Password</font>
+        if you forgot your password.
+    </string>
+        <string name="btn_reset_pw">Reset Password</string>
+        <string name="back_to_login">
+        Back to
+        <font color="#00c988"><b>Login</b></font>
+    </string>
+
 </resources>

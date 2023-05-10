@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "937020897833",
+    "firebase_url": "https://getworkdb-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "getworkdb",
     "storage_bucket": "getworkdb.appspot.com"
   },
