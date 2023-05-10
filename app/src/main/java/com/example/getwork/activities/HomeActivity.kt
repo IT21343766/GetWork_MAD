@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.example.getwork.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,LoginActivity::class.java))
         }
         binding.btnUser.setOnClickListener{
-            startActivity(Intent(this,MainActivity2::class.java))
+            startActivity(Intent(this,UserHomeActivity::class.java))
         }
     }
 

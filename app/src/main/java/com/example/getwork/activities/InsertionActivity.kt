@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.example.getwork.activities
 
 //internal class InsertionActivity package com.example.loginpage
 

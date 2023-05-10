@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.example.getwork.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import com.example.getwork.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class MainActivity2 : AppCompatActivity() {
+class UserHomeActivity : AppCompatActivity() {
 
     private lateinit var btnInsertData: Button
     private lateinit var btnFetchData: Button
@@ -17,7 +17,7 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_user_home)
 
         val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 

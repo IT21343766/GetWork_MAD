@@ -1,4 +1,4 @@
-package com.example.loginpage
+package com.example.getwork.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
