@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GetWork</string>
     <string name="signIn">Sign In</string>
-    <string name="register">Register</string>
+
     <string name="dontHaveAnAccountRegisterNow">Don\'t have an account? Register now</string>
     <string name="AlreadyHaveAnAccountLogin">Already have an account? Login in</string>
     <string name="proceed_to_pay">Proceed to pay</string>
@@ -10,4 +10,55 @@
     <string name="your_payment_information">Your Payment Information</string>
     <string name="submit_details">Submit Details</string>
     <string name="without_the_payment_information_getwork_cannot_pay_you_for_your_work_and_all_the_payments_will_be_held_until_payment_information_is_uploaded_and_approved">Without the payment information, GetWork cannot pay you for your work, and all the payments will be held until payment information is uploaded and approved</string>
+
+
+        <string name="started_title">Hello You</string>
+        <string name="started_sub_title">
+        Nice to meet you ,come join our community!
+        <br><b>Login</b>if you already have an account.</br>
+        <br><b>Register</b> to get started with the app</br>
+    </string>
+        <string name="illustrion_img">Illustrion Image</string>
+        <string name="register">Register</string>
+        <string name="btn_login">LOGIN</string>
+        <string name="login_title">Login to app</string>
+        <string name="Login_sub_title">
+        <font color="#00C9B8"><b>Login</b></font>
+        if you already have an account.
+    </string>
+        <string name="login_email">Your email or username</string>
+        <string name="login_password">your password</string>
+        <string name="login_forgot_pw">Forget password?</string>
+        <string name="login_havent_account">
+        I don\'t have an account
+        <font color="#00c988"><b>Register</b></font>
+    </string>
+        <string name="register_title">Create an account</string>
+        <string name="register_sub_title">
+        <font color="#00C9B8"><b>Register</b></font>
+        to get started with the app.
+    </string>
+        <string name="register_fullname">your full name</string>
+        <string name="register_email">Your email</string>
+        <string name="register_username">Your username</string>
+        <string name="register_confirm_password">Confirm Password</string>
+        <string name="register_have_account">
+        I already have an  account
+        <font color="#00C98B"><b>Login</b></font>
+    </string>
+        <string name="btn_register">REGISTER</string>
+        <string name="home_title">Wellcome Home page</string>
+        <string name="home_sub_title">Necessary services at the same place</string>
+        <string name="btn_logout">LOGOUT</string>
+        <string name="reset_pw_title">Reset your password</string>
+        <string name="reset_pw_sub_title">
+        <font color="#00C9B8">Reset Password</font>
+        if you forgot your password.
+    </string>
+        <string name="btn_reset_pw">Reset Password</string>
+        <string name="back_to_login">
+        Back to
+        <font color="#00c988"><b>Login</b></font>
+    </string>
+
 </resources>

@@ -19,7 +19,7 @@
             android:value="true" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.MainActivity_old"
             android:theme="@style/Theme.GetWork"
             android:exported="true">
         </activity>
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.RegistrationActivity"
+            android:name=".activities.RegisterActivity"
             android:theme="@style/Theme.GetWork"
             android:exported="true">
         </activity>
@@ -69,6 +69,45 @@
             android:exported="true">
         </activity>
 
+<!--        user-->
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InsertionActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name="activites.FetchingActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".EmployeeDetailsActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

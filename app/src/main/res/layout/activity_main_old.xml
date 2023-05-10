@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity_old">
+
+    <Button
+        android:id="@+id/button_proceed_to_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="48dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/proceed_to_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_payment_history"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="48dp"
+        android:text="@string/my_payment_history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_enter_payment_information" />
+    <Button
+        android:id="@+id/button_enter_payment_information"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="48dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/your_payment_information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_proceed_to_pay"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
