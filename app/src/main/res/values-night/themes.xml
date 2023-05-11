@@ -59,7 +59,7 @@
 
     <style name="Subtitle">
 <!--        <item name="android:fontFamily">@font/montserrat</item>-->
-        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColor">@color/darkest_grey</item>
         <item name="android:textSize">14sp</item>
     </style>
 

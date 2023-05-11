@@ -10,7 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GetWork"
+        android:theme="@style/Theme.LoginPage"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 

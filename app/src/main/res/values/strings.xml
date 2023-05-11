@@ -60,5 +60,11 @@
         Back to
         <font color="#00c988"><b>Login</b></font>
     </string>
+    <string name="userPayConf_cancelBtn">Cancel</string>
+    <string name="userPayConf_pay">Pay</string>
+    <string name="payments">Payments</string>
+    <string name="editpaymentinformation">Edit Payment Information</string>
+    <string name="addpayinfotitle">Add Payment Information</string>
+    <string name="youpayinfotitle">Your Payment Information</string>
 
 </resources>

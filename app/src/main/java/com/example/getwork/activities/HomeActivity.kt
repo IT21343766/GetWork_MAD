@@ -1,6 +1,8 @@
 package com.example.getwork.activities
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.getwork.databinding.ActivityHomeBinding
@@ -23,7 +25,13 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,LoginActivity::class.java))
         }
         binding.btnUser.setOnClickListener{
+            val sharedPrefs = getSharedPreferences("userPrefs", Context.MODE_PRIVATE)
+            val editor = sharedPrefs.edit()
+            editor.clear().apply()
             startActivity(Intent(this,UserHomeActivity::class.java))
+        }
+        binding.btnPayments.setOnClickListener{
+            startActivity(Intent(this,PaymentDashboard::class.java))
         }
     }
 

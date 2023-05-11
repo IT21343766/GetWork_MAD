@@ -58,6 +58,7 @@ class PaymentConfirmActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Confirm Payment"
 
+        binding.paymentAmountViewer.text = "500 LKR"
         binding.paymentLoadingMessage.visibility = View.VISIBLE
         binding.paymentAmountViewer.visibility = View.GONE
         binding.proceedToPayment.isEnabled = false

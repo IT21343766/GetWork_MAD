@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/primary_color">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_started_title"
-        android:layout_width="201dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="32dp"
-        android:text="Wellcome"
-        android:textAlignment="center"
-        android:textColor="#FFFDFD"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.395"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color">
 
-    <TextView
-        android:id="@+id/tv_login_sub_title"
-        android:layout_width="271dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="32dp"
-        android:text="Nice to meet you , come join our community! Login if you already have an account Register login started with the app"
-        android:textColor="#FAF6F6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_started_title" />
+        <TextView
+            android:id="@+id/tv_started_title"
+            android:layout_width="201dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="32dp"
+            android:text="Wellcome"
+            android:textAlignment="center"
+            android:textColor="#FFFDFD"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/img_illustration_started"
-        android:layout_width="329dp"
-        android:layout_height="214dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login_sub_title"
-        app:srcCompat="@drawable/illustration_started" />
+        <TextView
+            android:id="@+id/tv_login_sub_title"
+            android:layout_width="271dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="32dp"
+            android:text="Nice to meet you , come join our community! Login if you already have an account Register login started with the app"
+            android:textColor="#FAF6F6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.371"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_started_title" />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="264dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="#F1E3E3"
-        android:text="Login"
-        android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_illustration_started" />
+        <ImageView
+            android:id="@+id/img_illustration_started"
+            android:layout_width="329dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login_sub_title"
+            app:srcCompat="@drawable/illustration_started" />
 
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="265dp"
-        android:layout_height="65dp"
-        android:backgroundTint="#F4EEEE"
-        android:text="Register"
-        android:textColor="#040303"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="264dp"
+            android:layout_height="69dp"
+            android:backgroundTint="#F1E3E3"
+            android:text="Login"
+            android:textColor="#0C0C0C"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_illustration_started" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="265dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="36dp"
+            android:backgroundTint="#F4EEEE"
+            android:text="Register"
+            android:textColor="#040303"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

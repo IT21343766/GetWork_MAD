@@ -28,8 +28,9 @@ class PaymentHistoryAdapter (private val payHistList: ArrayList<PaymentModel>)
         val subAmount = currentPayEntry.amount.toString().takeLast(2)
 
         holder.itemPaymentAmount.text = "${amount}.${subAmount} ${currentPayEntry.currency.toString().uppercase()}"
-        holder.itemPaymentDateTime.text = "On ${currentPayEntry.time.toString()}"
+        holder.itemPaymentDateTime.text = "Payment on ${currentPayEntry.time.toString()}"
         holder.itemPaymentDesc.text = currentPayEntry.description.toString()
+//        holder.itemPaymentUid.text = "uid: ${currentPayEntry.uid.toString()}"
     }
 
     override fun getItemCount(): Int {
