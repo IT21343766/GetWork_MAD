@@ -12,7 +12,7 @@ import com.google.firebase.database.FirebaseDatabase
 class CreatePaymentInformationActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCreatePaymentInformationBinding
-    private lateinit var firebaseRef: DatabaseReference
+    private lateinit var fbdbref: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,20 +20,53 @@ class CreatePaymentInformationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnPayInfoSubmit.setOnClickListener {
-            submitPaymentInformation()
+            handleSubmit()
         }
         supportActionBar?.title = "Add Payment Information"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    //handles validations and continues to submission
+    private fun handleSubmit() {
+        // validations for account holders name
+        if (binding.editTextAccountHoldersName.text.toString().isNullOrEmpty()) {
+            binding.editTextAccountHoldersName.error = "This field is required"
+        }
+
+        // validations for account number field
+        else if (binding.editTextAccountNo.text.toString().isNullOrEmpty()) {
+            binding.editTextAccountNo.error = "This field is required"
+        }
+
+        // checking if account number is all numeric using regex expression
+        else if (!(Regex("[0-9]+") matches ((binding.editTextAccountNo.text.toString())))) {
+            binding.editTextAccountNo.error = "This field cnnot contain letters"
+        }
+
+
+        // validations for bank name
+        else if (binding.editTextBankName.text.toString().isNullOrEmpty()) {
+            binding.editTextBankName.error = "This field is required"
+        }
+
+        // validations for bank branch name
+        else if (binding.editTextBankBranchName.text.toString().isNullOrEmpty()) {
+            binding.editTextBankBranchName.error = "This field is required"
+        }
+        // if all checks out continue to submission
+        else {
+            submitPaymentInformation()
+        }
     }
 
     private fun submitPaymentInformation() {
         binding.btnPayInfoSubmit.isEnabled = false
         binding.btnPayInfoSubmit.text = "Uploading..."
 
-        firebaseRef = FirebaseDatabase
+        fbdbref = FirebaseDatabase
             .getInstance("https://getworkdb-default-rtdb.asia-southeast1.firebasedatabase.app/")
             .getReference("PaymentInformation")
-        val loc: String = firebaseRef.push().key!!
+        val loc: String = fbdbref.push().key!!
         val sharedPrefs = getSharedPreferences("userPrefs", Context.MODE_PRIVATE)
 
         val accHoldersName = binding.editTextAccountHoldersName.text.toString()
@@ -49,7 +82,7 @@ class CreatePaymentInformationActivity : AppCompatActivity() {
             bankBranchName
         )
 
-        firebaseRef.child(loc).setValue(empPayInfo)
+        fbdbref.child(loc).setValue(empPayInfo)
             // handle if payment info not provided yet
             .addOnCompleteListener {
                 Toast.makeText(this, "Payment Info added", Toast.LENGTH_LONG).show()
@@ -61,6 +94,8 @@ class CreatePaymentInformationActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG
                 )
                     .show()
+
+                // end activity on completion
                 finish()
             }
     }

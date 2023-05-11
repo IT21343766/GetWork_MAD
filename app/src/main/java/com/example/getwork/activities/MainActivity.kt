@@ -3,10 +3,7 @@ package com.example.getwork.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.getwork.databinding.ActivityMainBinding
-import com.example.getwork.activities.LoginActivity
-import com.example.getwork.activities.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {

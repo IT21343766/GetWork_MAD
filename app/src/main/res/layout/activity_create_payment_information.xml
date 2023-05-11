@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="12dp"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
+            android:text="@string/addpayinfotitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelAccountHoldersName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account holder's name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/page_title" />
 
         <EditText
             android:id="@+id/editTextAccountHoldersName"
@@ -21,17 +45,7 @@
             app:layout_constraintStart_toStartOf="@+id/labelAccountHoldersName"
             app:layout_constraintTop_toBottomOf="@+id/labelAccountHoldersName" />
 
-        <TextView
-            android:id="@+id/labelAccountHoldersName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Account holder's name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-<!--            app:layout_constraintTop_toBottomOf="@id/title_your_payment_information" -->
+        <!--            app:layout_constraintTop_toBottomOf="@id/title_your_payment_information" -->
 
         <EditText
             android:id="@+id/editTextAccountNo"

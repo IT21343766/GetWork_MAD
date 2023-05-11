@@ -15,4 +15,5 @@
     <color name="yellow_warning">#FFEED202</color>
     <color name="primary_color">#00c988</color>
     <color name="gray_light">#F0F0F0</color>
+    <color name="darkest_grey">#3A3A3A</color>
 </resources>

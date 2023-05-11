@@ -25,7 +25,6 @@ class DeletePaymentInformationActivity : AppCompatActivity() {
         binding.btnYesDelete.setOnClickListener {
             binding.btnNoKeep.isEnabled = false
             binding.btnYesDelete.isEnabled = false
-            binding.deleteWaringMessage.visibility = View.GONE
 
             sharedPrefs = getSharedPreferences("userPrefs", MODE_PRIVATE)
             firebaseRef = FirebaseDatabase
@@ -45,15 +44,14 @@ class DeletePaymentInformationActivity : AppCompatActivity() {
                                     this@DeletePaymentInformationActivity,
                                     "Payment Information Removed Successfully", Toast.LENGTH_LONG
                                 ).show()
-                                finish()
                             }
                             .addOnFailureListener {
                                 Toast.makeText(
                                     this@DeletePaymentInformationActivity,
                                     "An error occurred : ${it.message}", Toast.LENGTH_LONG
                                 ).show()
-                                finish()
                             }
+                        finish()
                     }
                 }
 

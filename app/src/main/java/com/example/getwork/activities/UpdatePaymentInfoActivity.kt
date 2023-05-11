@@ -29,7 +29,7 @@ class UpdatePaymentInfoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnPayInfoSubmit.setOnClickListener {
-            submitPaymentInformation()
+            handleSubmit()
         }
         supportActionBar?.title = "Update Payment Information"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -97,6 +97,37 @@ class UpdatePaymentInfoActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    private fun handleSubmit() {
+        // validations for account holders name
+        if (binding.editTextAccountHoldersName.text.toString().isNullOrEmpty()) {
+            binding.editTextAccountHoldersName.error = "This field is required"
+        }
+
+        // validations for account number field
+        else if (binding.editTextAccountNo.text.toString().isNullOrEmpty()) {
+            binding.editTextAccountNo.error = "This field is required"
+        }
+
+        // checking if account number is all numeric using regex expression
+        else if (!(Regex("[0-9]+")matches((binding.editTextAccountNo.text.toString())))) {
+            binding.editTextAccountNo.error = "This field cnnot contain letters"
+        }
+
+        // validations for bank name
+        else if (binding.editTextBankName.text.toString().isNullOrEmpty()) {
+            binding.editTextBankName.error = "This field is required"
+        }
+
+        // validations for bank branch name
+        else if (binding.editTextBankBranchName.text.toString().isNullOrEmpty()) {
+            binding.editTextBankBranchName.error = "This field is required"
+        }
+        // if all checks out continue to submission
+        else {
+            submitPaymentInformation()
+        }
     }
 
     private fun submitPaymentInformation() {

@@ -36,6 +36,7 @@ class PaymentHistoryActivity: AppCompatActivity() {
     }
 
     private fun getPaymentHistory() {
+
         binding.recyclerPaymentHistory.visibility = View.GONE
         binding.paymentHistoryLoadingMessage.visibility = View.VISIBLE
         firebaseRef = FirebaseDatabase
@@ -54,6 +55,49 @@ class PaymentHistoryActivity: AppCompatActivity() {
                       val payHistData = payHistSnap.getValue(PaymentModel::class.java)
                       payHistList.add(payHistData!!)
                   }
+
+                    val mAdapter = PaymentHistoryAdapter(payHistList)
+                    binding.recyclerPaymentHistory.layoutManager = LinearLayoutManager(this@PaymentHistoryActivity)
+                    binding.recyclerPaymentHistory.adapter = mAdapter
+
+                    binding.recyclerPaymentHistory.visibility = View.VISIBLE
+                    binding.paymentHistoryLoadingMessage.visibility = View.GONE
+                }
+                else {
+                    binding.paymentHistoryLoadingMessage.text = "No payments made yet."
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@PaymentHistoryActivity, "Fetch cancelled: ${error.message}", Toast.LENGTH_LONG).show()
+            }
+
+        })
+    }
+
+    private fun getPaymentHistoryBySearchDate(date: String?) {
+
+        binding.recyclerPaymentHistory.visibility = View.GONE
+        binding.paymentHistoryLoadingMessage.visibility = View.VISIBLE
+
+        val searchQuery = firebaseRef.orderByChild("date")
+
+        firebaseRef = FirebaseDatabase
+            .getInstance("https://getworkdb-default-rtdb.asia-southeast1.firebasedatabase.app/")
+            .getReference("Payments")
+        val sharedPref = getSharedPreferences("userPrefs", MODE_PRIVATE)
+
+        val query = firebaseRef.orderByChild("uid")
+            .equalTo(sharedPref.getString("uid", null))
+
+        query.addListenerForSingleValueEvent(object: ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                payHistList.clear()
+                if(snapshot.exists()) {
+                    for(payHistSnap in snapshot.children) {
+                        val payHistData = payHistSnap.getValue(PaymentModel::class.java)
+                        payHistList.add(payHistData!!)
+                    }
 
                     val mAdapter = PaymentHistoryAdapter(payHistList)
                     binding.recyclerPaymentHistory.layoutManager = LinearLayoutManager(this@PaymentHistoryActivity)

@@ -1,6 +1,7 @@
 package com.example.getwork.activities
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -94,6 +95,12 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){ login ->
                 if (login.isSuccessful){
+                    val user = FirebaseAuth.getInstance().currentUser
+                    val sharedPrefs = getSharedPreferences("userPrefs", Context.MODE_PRIVATE)
+                    val editor = sharedPrefs.edit()
+                    editor.putString("uid", user?.uid )
+                    editor.apply()
+
                     Intent(this,HomeActivity::class.java).also{
                         it.flags=Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(it)

@@ -34,6 +34,8 @@ class ReadPaymentInformationActivity : AppCompatActivity() {
         binding.labelBankName.visibility = View.GONE
         binding.labelBankBranchName.visibility = View.GONE
         binding.layoutForButtons.visibility = View.GONE
+        binding.approvedSign.visibility = View.GONE
+        binding.approvedSignTitle.visibility = View.GONE
 
         setContentView(binding.root)
 
@@ -88,6 +90,8 @@ class ReadPaymentInformationActivity : AppCompatActivity() {
                     binding.labelBankName.visibility = View.VISIBLE
                     binding.labelBankBranchName.visibility = View.VISIBLE
                     binding.layoutForButtons.visibility = View.VISIBLE
+                    binding.approvedSignTitle.visibility = View.VISIBLE
+                    binding.approvedSign.visibility = View.VISIBLE
 
                 }
                 else {
